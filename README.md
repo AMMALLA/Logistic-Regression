@@ -1,5 +1,9 @@
 # Logistic-Regression
+
 Logistic Regression Description
+
+
+
 ![image](https://user-images.githubusercontent.com/4158204/152091063-70c70f33-4cb8-471c-bc83-77cddc6b16b1.png)
 
 
@@ -9,19 +13,27 @@ Logistic Regression Description
 
 3) Logistic Function
 
-  How Linear regression is similar to logistic regression?
+
+    How Linear regression is similar to logistic regression?
+  
     Derivation of the sigmoid function
-  What are odds?
+    
+     What are odds?
   
 4) Cost function in Logistic regression
 
 5) What is the use of MLE in logistic regression?
+
     Derivation of the Cost function
+    
     Why do we take the Negative log-likelihood function?
   
 6) Gradient Descent Optimization
+
     Derivative of the Cost function
+    
     Derivative of the sigmoid function
+    
 7) Endnotes
 
 What is Logistic Regression?
@@ -38,6 +50,7 @@ Now, if we use linear regression to find the best fit line which aims at minimiz
 
 
 Here the threshold value is 0.5, which means if the value of h(x) is greater than 0.5 then we predict malignant tumor (1) and if it is less than 0.5 then we predict benign tumor (0). Everything seems okay here but now let’s change it a bit, we add some outliers in our dataset, now this best fit line will shift to that point. Hence the line will be somewhat like this:
+
 ![image](https://user-images.githubusercontent.com/4158204/152091155-0927b702-7d5b-4e84-b60f-f89e42f50b01.png)
 
 
