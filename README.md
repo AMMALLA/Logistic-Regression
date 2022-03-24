@@ -170,31 +170,31 @@ Now, we will derive the cost function with the help of the chain rule as it allo
 
 * Step-1: Use chain rule and break the partial derivative of log-likelihood.
 
-            ![image](https://user-images.githubusercontent.com/4158204/152097142-b94bcf3e-f206-43c8-ad52-2deb0efc1efc.png)           
+![image](https://user-images.githubusercontent.com/4158204/152097142-b94bcf3e-f206-43c8-ad52-2deb0efc1efc.png)           
        
 * Step-2: Find derivative of log-likelihood w.r.t p
 
-            ![image](https://user-images.githubusercontent.com/4158204/152097293-11fd9f41-3830-439c-a503-9f5fe8337a9a.png)
+![image](https://user-images.githubusercontent.com/4158204/152097293-11fd9f41-3830-439c-a503-9f5fe8337a9a.png)
 
 
 * Step-3: Find derivative of ‘p’ w.r.t ‘z’
 
-             ![image](https://user-images.githubusercontent.com/4158204/152097461-1bfcb86b-8a56-4c06-bfc6-21425b9e1989.png)
+![image](https://user-images.githubusercontent.com/4158204/152097461-1bfcb86b-8a56-4c06-bfc6-21425b9e1989.png)
 
 * Step-4: Put all the derivatives in equation 1
 
-              ![image](https://user-images.githubusercontent.com/4158204/152097567-78cb267a-e2e9-4822-a0e1-7bb922e26014.png)
+![image](https://user-images.githubusercontent.com/4158204/152097567-78cb267a-e2e9-4822-a0e1-7bb922e26014.png)
 
 
 * Step-5: Find derivate of z w.r.t θ
                
-              ![image](https://user-images.githubusercontent.com/4158204/152097782-35fb4457-5150-45a6-8591-4dc80b983b9e.png)
+![image](https://user-images.githubusercontent.com/4158204/152097782-35fb4457-5150-45a6-8591-4dc80b983b9e.png)
               
               
               
     Hence the derivative of our cost function is:
                         
-              ![image](https://user-images.githubusercontent.com/4158204/152098005-1a46147d-18ab-4122-9e67-d6eb20ace48d.png)
+![image](https://user-images.githubusercontent.com/4158204/152098005-1a46147d-18ab-4122-9e67-d6eb20ace48d.png)
 
 
 Now since we have our derivative of the cost function, we can write our gradient descent algorithm as:
