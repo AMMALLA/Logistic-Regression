@@ -36,12 +36,16 @@ Logistic Regression Description
     
 7) Endnotes
 
-What is Logistic Regression?
+## What is Logistic Regression?
+
+
 Logistic regression is the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary). Like all regression analyses, logistic regression is a predictive analysis. Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
 
 I found this definition on google and now we’ll try to understand it. Logistic Regression is another statistical analysis method borrowed by Machine Learning. It is used when our dependent variable is dichotomous or binary. It just means a variable that has only 2 outputs, for example, A person will survive this accident or not, The student will pass this exam or not. The outcome can either be yes or no (2 outputs). This regression technique is similar to linear regression and can be used to predict the Probabilities for classification problems.
 
-Why do we use Logistic Regression rather than Linear Regression?
+## Why do we use Logistic Regression rather than Linear Regression?
+
+
 If you have this doubt, then you’re in the right place, my friend. After reading the definition of logistic regression we now know that it is only used when our dependent variable is binary and in linear regression this dependent variable is continuous.
 
 The second problem is that if we add an outlier in our dataset, the best fit line in linear regression shifts to fit that point.
@@ -57,7 +61,9 @@ Here the threshold value is 0.5, which means if the value of h(x) is greater tha
 Here the threshold value is 0.5, which means if the value of h(x) is greater than 0.5 then we predict malignant tumor (1) and if it is less than 0.5 then we predict benign tumor (0). Everything seems okay here but now let’s change it a bit, we add some outliers in our dataset, now this best fit line will shift to that point. Hence the line will be somewhat like this:
 ![image](https://user-images.githubusercontent.com/4158204/152091237-b6dc4eb9-c52b-4e6b-b113-c1215f6b974d.png)
 
-Logistic Function
+## Logistic Function
+
+
 You must be wondering how logistic regression squeezes the output of linear regression between 0 and 1. If you haven’t read my article on Linear Regression then please have a look at it for a better understanding.
 
  Well, there’s a little bit of math included behind this and it is pretty interesting trust me.
@@ -106,7 +112,9 @@ In order to solve this problem, we derive a different cost function for logistic
 
 In the next section, we’ll talk a little bit about the maximum likelihood estimator and what it is used for. We’ll also try to see the math behind this log loss function.
 
-What is the use of Maximum Likelihood Estimator?
+## What is the use of Maximum Likelihood Estimator?
+
+
 The main aim of MLE is to find the value of our parameters for which the likelihood function is maximized. The likelihood function is nothing but a joint pdf of our sample observations and joint distribution is the multiplication of the conditional probability for observing each example given the distribution parameters. In other words, we try to find such that plugging these estimates into the model for P(x), yields a number close to one for people who had a malignant tumor and close to 0 for people who had a benign tumor.
 
 Let’s start by defining our likelihood function. We now know that the labels are binary which means they can be either yes/no or pass/fail etc. We can also say we have two outcomes success and failure. This means we can interpret each label as Bernoulli random variable.
@@ -175,6 +183,7 @@ Here alpha is known as the learning rate. It determines the step size at each it
 Now the question is what is this derivative of cost function? How do we do this? Don’t worry, In the next section we’ll see how we can derive this cost function w.r.t our parameters.
 
 ## Derivation of Cost Function:
+
 Before we derive our cost function we’ll first find a derivative for our sigmoid function because it will be used in derivating the cost function.
 
 ![image](https://user-images.githubusercontent.com/4158204/152096505-ac29e1a4-e9c6-4931-a426-d156efcce39a.png)
