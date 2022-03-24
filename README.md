@@ -10,18 +10,18 @@ Logistic Regression Description
 3) Logistic Function
 
   How Linear regression is similar to logistic regression?
-  Derivation of the sigmoid function
+    Derivation of the sigmoid function
   What are odds?
+  
 4) Cost function in Logistic regression
 
 5) What is the use of MLE in logistic regression?
-
-  Derivation of the Cost function
-  Why do we take the Negative log-likelihood function?
+    Derivation of the Cost function
+    Why do we take the Negative log-likelihood function?
+  
 6) Gradient Descent Optimization
-
-Derivative of the Cost function
-Derivative of the sigmoid function
+    Derivative of the Cost function
+    Derivative of the sigmoid function
 7) Endnotes
 
 What is Logistic Regression?
