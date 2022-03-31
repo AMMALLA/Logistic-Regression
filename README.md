@@ -1,5 +1,6 @@
 # Logistic-Regression
 
+
 Logistic Regression Description
 
 
@@ -34,7 +35,7 @@ Logistic Regression Description
     
     Derivative of the sigmoid function
     
-7) Endnotes
+7) Implementation of logistic Regression using Python cODE
 
 ## What is Logistic Regression?
 
