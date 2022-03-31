@@ -21,17 +21,17 @@ Logistic Regression Description
     
    ##### * What are odds?
   
-4) Cost function in Logistic regression
+#### 4) Cost function in Logistic regression
 
-5) What is the use of MLE in logistic regression?
+#### 5) What is the use of MLE in logistic regression?
 
-    Derivation of the Cost function
+   ##### * Derivation of the Cost function
     
-    Why do we take the Negative log-likelihood function?
+   ##### * Why do we take the Negative log-likelihood function?
   
-6) Gradient Descent Optimization
+#### 6) Gradient Descent Optimization
 
-    Derivative of the Cost function
+   ##### * Derivative of the Cost function
     
     Derivative of the sigmoid function
     
