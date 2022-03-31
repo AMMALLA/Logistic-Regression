@@ -8,7 +8,7 @@ Logistic Regression Description
 ![image](https://user-images.githubusercontent.com/4158204/152091063-70c70f33-4cb8-471c-bc83-77cddc6b16b1.png)
 
 
-##### 1) What is Logistic Regression
+###### 1) What is Logistic Regression
 
 ##### 2) Why do we use Logistic regression rather than Linear Regression?
 
