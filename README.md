@@ -233,12 +233,18 @@ If the slope is negative (downward slope) then our gradient descent will add som
 
 ## Implementation of logistic Regression using Python CODE
 
+When we are implementing Logistic Regression Machine Learning Algorithm using sklearn, we are calling the sklearn’s methods and not implementing the algorithm from scratch.
+In this article, I will be implementing a Logistic Regression model without relying on Python’s easy-to-use sklearn library. This post aims to discuss the fundamental mathematics and statistics behind a Logistic Regression model. I hope this will help us fully understand how Logistic Regression works in the background.
+
+
  ### Import the required libraries
  
  
 ##### import numpy as np
 ##### import pandas as pd
 ##### import seaborn as sns
+
+
 
 ### Load the classification data
 
@@ -248,7 +254,10 @@ If the slope is negative (downward slope) then our gradient descent will add som
 
 ![lg1](https://user-images.githubusercontent.com/4158204/161000837-afde5035-b5fb-4e0c-a12d-997b8b173860.JPG)
 
+
+
 ### Separate the features and label
+
 
 
 ##### x = df[['Glucose','BloodPressure']]
@@ -257,6 +266,8 @@ If the slope is negative (downward slope) then our gradient descent will add som
 
 ![lg2](https://user-images.githubusercontent.com/4158204/161003534-44db64c0-a607-46d3-87cc-791c46b97598.JPG)
 
+
+
 ### Define the sigmoid function
 
 
@@ -264,7 +275,9 @@ If the slope is negative (downward slope) then our gradient descent will add som
   ##### output = 1 / (1 + np.exp(-input))
   ##### return output
     
- 
+    
+    
+ ### let us define the optimization function
  
  ##### def optimize(x, y,learning_rate,iterations,parameters): 
    ##### size = x.shape[0]
