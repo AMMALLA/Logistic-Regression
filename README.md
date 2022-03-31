@@ -18,7 +18,7 @@ Logistic Regression Description
   
     Derivation of the sigmoid function
     
-     What are odds?
+    What are odds?
   
 4) Cost function in Logistic regression
 
