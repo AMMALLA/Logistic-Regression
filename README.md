@@ -91,12 +91,14 @@ The problem here is that the range is restricted and we don’t want a restricte
 
 
 ![image](https://user-images.githubusercontent.com/4158204/152092213-cd2460aa-c957-45b9-8583-0057dcad9a4d.png)
+  
   If you understood what I did here then you have done 80% of the maths. Now we just want a function of P because we want to predict probability right? not log of odds. To do so we will multiply by exponent on both sides and then solve for P.
   
   
   ![image](https://user-images.githubusercontent.com/4158204/152092739-29ecfe85-de04-4f99-a59a-5a03b63a5c4c.png)
 
 Now we have our logistic function, also called a sigmoid function. The graph of a sigmoid function is as shown below. It squeezes a straight line into an S-curve.
+
 ![image](https://user-images.githubusercontent.com/4158204/152092813-8c883e26-e469-42ef-a2cc-894b4ba28ef1.png)
 Cost Function in Logistic Regression
 In linear regression, we use the Mean squared error which was the difference between y_predicted and y_actual and this is derived from the maximum likelihood estimator. The graph of the cost function in linear regression is like this:
