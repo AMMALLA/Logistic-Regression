@@ -88,8 +88,12 @@ How similar it is too linear regression? If you haven’t read my article on Lin
  Do you think we are done here? No, we are not. We know that odds can always be positive which means the range will always be (0,+∞ ). Odds are nothing but the ratio of the probability of success and probability of failure. Now the question comes out of so many other options to transform this why did we only take ‘odds’? Because odds are probably the easiest way to do this, that’s it.
 
 The problem here is that the range is restricted and we don’t want a restricted range because if we do so then our correlation will decrease. By restricting the range we are actually decreasing the number of data points and of course, if we decrease our data points, our correlation will decrease. It is difficult to model a variable that has a restricted range. To control this we take the log of odds which has a range from (-∞,+∞).
+
+
 ![image](https://user-images.githubusercontent.com/4158204/152092213-cd2460aa-c957-45b9-8583-0057dcad9a4d.png)
   If you understood what I did here then you have done 80% of the maths. Now we just want a function of P because we want to predict probability right? not log of odds. To do so we will multiply by exponent on both sides and then solve for P.
+  
+  
   ![image](https://user-images.githubusercontent.com/4158204/152092739-29ecfe85-de04-4f99-a59a-5a03b63a5c4c.png)
 
 Now we have our logistic function, also called a sigmoid function. The graph of a sigmoid function is as shown below. It squeezes a straight line into an S-curve.
@@ -244,4 +248,44 @@ If the slope is negative (downward slope) then our gradient descent will add som
 
 ![lg1](https://user-images.githubusercontent.com/4158204/161000837-afde5035-b5fb-4e0c-a12d-997b8b173860.JPG)
 
+### Separate the features and label
 
+
+##### x = df[['Glucose','BloodPressure']]
+##### y = df['Diabetes']
+##### x
+
+![lg2](https://user-images.githubusercontent.com/4158204/161003534-44db64c0-a607-46d3-87cc-791c46b97598.JPG)
+
+### Define the sigmoid function
+
+
+##### def sigmoid(input):    
+  ##### output = 1 / (1 + np.exp(-input))
+  ##### return output
+    
+### Initialize the weight and bais
+
+
+##### init_parameters = {} 
+##### init_parameters["weight"] = np.zeros(x.shape[1])
+##### init_parameters["bias"] = 0
+
+
+### Define the train function
+
+
+##### def train(x, y, learning_rate,iterations):
+   ##### parameters_out = optimize(x, y, learning_rate, iterations ,init_parameters)
+   ##### return parameters_out
+   
+   
+### Train the model
+
+##### parameters_out = train(x, y, learning_rate = 0.02, iterations = 500)
+##### parameters_out
+
+### Predict using the trained model
+##### output_values = np.dot(x[:10], parameters_out["weight"]) + parameters_out["bias"]
+##### predictions = sigmoid(output_values) >= 1/2
+##### predictions
