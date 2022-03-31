@@ -35,7 +35,7 @@ Logistic Regression Description
     
     Derivative of the sigmoid function
     
-7) Implementation of logistic Regression using Python cODE
+7) Implementation of logistic Regression using Python CODE
 
 ## What is Logistic Regression?
 
@@ -227,5 +227,21 @@ If the slope is negative (downward slope) then our gradient descent will add som
 * 
 
 
+## Implementation of logistic Regression using Python CODE
+
+ ### Import the required libraries
+ 
+ 
+##### import numpy as np
+##### import pandas as pd
+##### import seaborn as sns
+
+### Load the classification data
+
+
+##### df = pd.read_csv('Logistic-Regression-Data.csv')
+##### df.head()
+
+![lg1](https://user-images.githubusercontent.com/4158204/161000837-afde5035-b5fb-4e0c-a12d-997b8b173860.JPG)
 
 
